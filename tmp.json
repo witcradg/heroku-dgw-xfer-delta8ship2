@@ -1,0 +1,1480 @@
+D8G-3235 | Label printed
+D8G-3232 | Label printed
+OrderHistoryPersistenceServiceImpl::write
+D8G-3237 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3237
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=06037969-bbd5-46ff-887e-3b1a0a4a7202 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=1366ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on ba071be6-adac-4d0b-8222-6695f9f44bc7 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u35029 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 13422 (http)
+Initializing ProtocolHandler ["http-nio-13422"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1720 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-13422"]
+Tomcat started on port(s): 13422 (http) with context path ''
+Started OrderTrackingApplication in 7.277 seconds (JVM running for 8.231)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+onShipped: {"resource_url":"https://ssapi13.shipstation.com/shipments?storeID=54658&batchId=29185019&includeShipmentItems=False","resource_type":"SHIP_NOTIFY"}
+entering processBatch function
+05/08/2022_15:18:38
+Aalfr0101@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3233 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+AfterShip returned %s
+r]: at=info method=POST path="/shipped" host=delta8ship2.herokuapp.com request_id=785d88d7-2644-45c6-93eb-500b516f9459 fwd="34.199.251.255" dyno=web.1 connect=0ms service=3159ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on a6994125-f8dc-48be-b8c8-a2daf6e20941 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u42448 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 35527 (http)
+Initializing ProtocolHandler ["http-nio-35527"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1799 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-35527"]
+Tomcat started on port(s): 35527 (http) with context path ''
+Started OrderTrackingApplication in 7.965 seconds (JVM running for 9.163)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+OrderHistoryPersistenceServiceImpl::write
+D8G-3238 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3238
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=760be243-c4bf-415c-92e8-7a1d734a4178 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=1613ms status=200 bytes=92 protocol=https
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=6a390e40-d8ac-4885-92b1-50c1e2cf8862 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=44ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 2a9f0d08-1b8b-4340-889b-a2935608a780 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u59862 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 46151 (http)
+Initializing ProtocolHandler ["http-nio-46151"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1382 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-46151"]
+Tomcat started on port(s): 46151 (http) with context path ''
+Started OrderTrackingApplication in 6.495 seconds (JVM running for 7.368)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+onShipped: {"resource_url":"https://ssapi13.shipstation.com/shipments?storeID=54658&batchId=29185019&includeShipmentItems=False","resource_type":"SHIP_NOTIFY"}
+entering processBatch function
+05/08/2022_17:18:38
+Aalfr0101@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3233 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+AfterShip returned %s
+r]: at=info method=POST path="/shipped" host=delta8ship2.herokuapp.com request_id=ce2ba48a-0f9b-4e71-b80c-09aa87acf4ca fwd="34.200.1.155" dyno=web.1 connect=0ms service=1412ms status=200 bytes=92 protocol=https
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=eb6a8c5c-4de9-4e24-99db-ebf26a0153ac fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=4ms status=200 bytes=92 protocol=https
+OrderHistoryPersistenceServiceImpl::write
+D8G-3239 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3239
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=90da6879-1f17-4989-9664-315006e1d380 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=1004ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+ild started by user devin@getcodestaff.io
+lease v33 created by user devin@getcodestaff.io
+ploy f420f898 by user devin@getcodestaff.io
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 670930d9-b91a-4699-9043-0fd4b0d65953 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u57315 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+ild succeeded
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 81 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 46424 (http)
+Initializing ProtocolHandler ["http-nio-46424"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1684 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-46424"]
+Tomcat started on port(s): 46424 (http) with context path ''
+Started OrderTrackingApplication in 7.128 seconds (JVM running for 8.461)
+]: State changed from starting to up
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 44cc49cb-a6c0-46ce-a492-a5dab6b6f54c with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u48131 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 135 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 23895 (http)
+Initializing ProtocolHandler ["http-nio-23895"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2005 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-23895"]
+Tomcat started on port(s): 23895 (http) with context path ''
+Started OrderTrackingApplication in 8.409 seconds (JVM running for 9.891)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=bc438a3e-098f-409d-b4af-90746d388a4f fwd="10.87.138.18,191.236.193.107" dyno=web.1 connect=0ms service=100ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChCilWPOP7jx0IXW0f8Z6A4lEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3240 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=eddyrgang@gmail.com, fullName=EDD Rosario, familyName=EDD Rosario, givenName=, nickname=null, phoneNumber=null, addressLine1=8344 NW 66th Street, addressLine2=Acs-2796, addressLine3=null, city=Miami, state=FL, postalCode=33166, shippingTotal=0, items=[{"totalPriceWithoutTaxes":299.94,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":299.94,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Gummies Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":299.94,"duplicatable":false,"shippable":true,"minQuantity":null,"price":99.98,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"B2G1","categories":[],"height":null,"unitPrice":99.98,"image":"/static/ceace3dbb473fa1ddd6116f79a08e569/buy2get1free.jpg","stackable":true,"quantity":3,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/buy-2-get-1-free","addedOn":"2022-08-06T00:52:59Z","token":"0e59eb32-1384-4943-acd5-28350b24e86b","initialData":"","modificationDate":"2022-08-06T00:55:28Z","alternatePrices":{},"cancellationAction":"None","name":"BUY 2 GET 1 FREE","width":null,"totalWeight":0,"uniqueId":"b1b795be-38db-4d8f-99cb-0d0c4c742f11"}], scInvoiceNumber=D8G-3240, scInvoiceTotal=32095, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@6418cdb, scOrderWeight=0, scOrderDate=2022-08-06T01:04:31Z, sqCustomerId=STFRS9C38GR1X65NEYZF6V9TBC, sqOrderId=p40QcAbroKHQFNxpmFBvnxDOYMWZY, sqInvoiceId=inv:0-ChCilWPOP7jx0IXW0f8Z6A4lEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChCilWPOP7jx0IXW0f8Z6A4lEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3240 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3240 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3240
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=5abb44ab-7282-4ad8-a402-753b5ea1db0a fwd="10.87.138.18,191.236.193.107" dyno=web.1 connect=0ms service=10151ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 41310013-282b-4a79-b415-656d7e8344e7 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u32246 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 93 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 23686 (http)
+Initializing ProtocolHandler ["http-nio-23686"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1791 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-23686"]
+Tomcat started on port(s): 23686 (http) with context path ''
+Started OrderTrackingApplication in 7.748 seconds (JVM running for 8.913)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=ef5606f7-dbdb-4831-8922-3bb4b7024de9 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=141ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChBXoac_NyW6qkrVzPunX6GqEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3241 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=dontelopp@gmail.com, fullName=Donte mays, familyName=Donte mays, givenName=, nickname=null, phoneNumber=null, addressLine1=1006 Coleman Street, addressLine2=, addressLine3=null, city=Wilmington, state=DE, postalCode=19810, shippingTotal=13, items=[{"totalPriceWithoutTaxes":39.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":39.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the highest Quality Delta 8 THC 200mg Pouches Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":39.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":39.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"200mg-pack-sample","categories":[],"height":null,"unitPrice":39.99,"image":"/static/8d7d96e62dd01b73fcccaad0630079b9/all-5-gummies-pouches.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/5-pack","addedOn":"2022-08-06T11:06:09Z","token":"c626521f-0935-4700-aee9-ebffdd94564c","initialData":"","modificationDate":"2022-08-06T11:06:09Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Gummie 5 Pack 1000MG","width":null,"totalWeight":0,"uniqueId":"ecc3e1ba-a96f-49c6-9181-ed3c20bd6d60"}], scInvoiceNumber=D8G-3241, scInvoiceTotal=5349, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@206552de, scOrderWeight=0, scOrderDate=2022-08-06T11:09:39Z, sqCustomerId=S40JJ077CWT6X0SK9C2A5AMGX0, sqOrderId=t4TgqXZcjM5u7WjYQNcyVARhBJBZY, sqInvoiceId=inv:0-ChBXoac_NyW6qkrVzPunX6GqEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChBXoac_NyW6qkrVzPunX6GqEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3241 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3241 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3241
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=19743bcc-ecb1-48ec-865f-dd752106c757 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=3160ms status=200 bytes=92 protocol=https
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=fbe842d3-15f4-41f0-b58b-cdbb7e6ae106 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=6ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChCGYCM5O80R5CXT9HkIsglQEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3242 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=dbeauty_2000@yahoo.com, fullName=Deborah Brandt, familyName=Deborah Brandt, givenName=, nickname=null, phoneNumber=null, addressLine1=1804 5th AVE SW, addressLine2=, addressLine3=null, city=Austin, state=MN, postalCode=55912, shippingTotal=13, items=[{"totalPriceWithoutTaxes":49.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":49.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 Banana Gummies Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":39.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":49.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"bananas","categories":[],"height":null,"unitPrice":49.99,"image":"/static/82c599fe4f95f0bbc8f1796bb76e68c3/bananas-screenshot.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/bananas","addedOn":"2022-08-06T11:15:39Z","token":"3bb85b1f-1a74-4928-b172-4b45fb0a7ae9","initialData":"","modificationDate":"2022-08-06T11:15:39Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Bananas 1000MG","width":null,"totalWeight":0,"uniqueId":"b07aa631-952b-44e8-a454-ad20d3af9a0e"},{"totalPriceWithoutTaxes":49.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":49.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Cherry Pieces Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":39.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":49.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"cherry-pieces","categories":[],"height":null,"unitPrice":49.99,"image":"/static/6fa5ed9d3fe3657990c97091cb133fd9/cherry-pieces.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/vegan-delta-8-cherry-pieces-1000mg","addedOn":"2022-08-06T11:16:55Z","token":"3bb85b1f-1a74-4928-b172-4b45fb0a7ae9","initialData":"","modificationDate":"2022-08-06T11:16:55Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Vegan Cherry Pieces 1000MG","width":null,"totalWeight":0,"uniqueId":"94de4277-9649-416f-8b39-2da5c1e66b95"}], scInvoiceNumber=D8G-3242, scInvoiceTotal=9991, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@61b5865d, scOrderWeight=0, scOrderDate=2022-08-06T11:17:53Z, sqCustomerId=FP0ZHYKFA8XRV6C9THQ7HGGE14, sqOrderId=7NsVE9Mas8i33Bf1oPHI3GheFFGZY, sqInvoiceId=inv:0-ChCGYCM5O80R5CXT9HkIsglQEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChCGYCM5O80R5CXT9HkIsglQEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3242 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3242 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3242
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=e48c0c7b-2fd8-4dae-819b-94173db42b96 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=3050ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on cd765b26-e092-4516-ada4-59ec468a50c5 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u33153 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 27210 (http)
+Initializing ProtocolHandler ["http-nio-27210"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1464 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-27210"]
+Tomcat started on port(s): 27210 (http) with context path ''
+Started OrderTrackingApplication in 6.784 seconds (JVM running for 7.81)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=3e1913b2-206a-4ab3-bc32-75b3977a37af fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=36ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChC6rdr1bqMbvr-mc1qw0ZsMEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3243 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=rdrunner1965.ka@gmail.com, fullName=Karen Abernethy, familyName=Karen Abernethy, givenName=, nickname=null, phoneNumber=null, addressLine1=17338 Rt 42, addressLine2=, addressLine3=null, city=Muncy Valley, state=PA, postalCode=17758, shippingTotal=13, items=[{"totalPriceWithoutTaxes":14.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":14.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Vegan Apple Dots Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":14.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":14.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"200mg-appledots-sample","categories":[],"height":null,"unitPrice":14.99,"image":"/static/0f127605df56f2d38f2c48dfd44ceeef/200mg-appledots.jpeg","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/apple-dots-200mg","addedOn":"2022-08-06T12:38:54Z","token":"ff462c20-2ca9-4538-aa36-d16c700057c6","initialData":"","modificationDate":"2022-08-06T12:38:54Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Apple Dots 200MG","width":null,"totalWeight":0,"uniqueId":"86440293-b1a3-4d40-8d5a-8d162d10fb3c"}], scInvoiceNumber=D8G-3243, scInvoiceTotal=3020, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@291e8f8e, scOrderWeight=0, scOrderDate=2022-08-06T12:44:30Z, sqCustomerId=ZXWC0XNHBWYMB166MB9QRNP4JC, sqOrderId=Vkb0RrlF8n4IeaELO8tCh9e1EkJZY, sqInvoiceId=inv:0-ChC6rdr1bqMbvr-mc1qw0ZsMEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChC6rdr1bqMbvr-mc1qw0ZsMEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3243 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3243 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3243
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=ac5dc69c-4e01-4df1-becf-4dc1216020a2 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=3064ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 3153cdf3-3a3f-4276-933e-8a3faa4afc97 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u14525 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 120 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 15348 (http)
+Initializing ProtocolHandler ["http-nio-15348"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 3192 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-15348"]
+Tomcat started on port(s): 15348 (http) with context path ''
+Started OrderTrackingApplication in 10.42 seconds (JVM running for 12.204)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=d4a1c3fa-3d3e-4e34-89f3-fb4c7c8911dd fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=86ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChAE36loNGL65JnOYtNxwcl4EIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3244 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=cbaumy30@gmail.com, fullName=Christopher Baumy, familyName=Christopher Baumy, givenName=, nickname=null, phoneNumber=null, addressLine1=6578 12th St, addressLine2=, addressLine3=null, city=CHESAPEAKE BEACH, state=MD, postalCode=20732, shippingTotal=13, items=[{"totalPriceWithoutTaxes":59.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":59.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Nerds Clusters Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":59.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":59.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"nerd-clusters","categories":[],"height":null,"unitPrice":59.99,"image":"/static/947a2b7ad95e1eb8173a7bd7ba6baff0/nerd-clusters-screenshot.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/nerd-clusters","addedOn":"2022-08-06T15:58:10Z","token":"81426e5c-7e5d-4157-97f4-e227310a9690","initialData":"","modificationDate":"2022-08-06T15:58:10Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Nerd Clusters 1500MG","width":null,"totalWeight":0,"uniqueId":"6ad7b3da-83f7-47d8-a08d-df1da78227da"}], scInvoiceNumber=D8G-3244, scInvoiceTotal=7709, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@48a4a35, scOrderWeight=0, scOrderDate=2022-08-06T15:59:30Z, sqCustomerId=SJ0NVVCRBCZC7494X29BFMZ7V0, sqOrderId=XlNlNNJJsfxJIzp5LUcFpYe8rd8YY, sqInvoiceId=inv:0-ChAE36loNGL65JnOYtNxwcl4EIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChAE36loNGL65JnOYtNxwcl4EIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3244 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3244 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3244
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=4c687125-6d6b-444a-913b-55076c808453 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=3578ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on df83ef6b-130a-4978-a9df-534e8e7bbb4d with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u28309 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 71 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 5104 (http)
+Initializing ProtocolHandler ["http-nio-5104"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1524 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-5104"]
+Tomcat started on port(s): 5104 (http) with context path ''
+Started OrderTrackingApplication in 7.194 seconds (JVM running for 9.851)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=fda60ece-ab05-4b8d-a5b7-07241509ffc5 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=45ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChAp7Dvzw5vscMo8zDkSWMjWEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3245 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=nelaw43@yahoo.com, fullName=Nate, familyName=Nate, givenName=, nickname=null, phoneNumber=null, addressLine1=180 Shipe Road, addressLine2=, addressLine3=null, city=Sunbury, state=PA, postalCode=17801, shippingTotal=13, items=[{"totalPriceWithoutTaxes":49.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":49.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Peach Rings Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":49.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":49.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"peach-rings","categories":[],"height":null,"unitPrice":49.99,"image":"/static/936655c005db3f2e678389350975ab67/peach-rings.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/peach-rings","addedOn":"2022-08-06T18:21:22Z","token":"44885bc2-f703-406f-b789-910ceaeeb144","initialData":"","modificationDate":"2022-08-06T18:21:22Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Peach Rings 1000MG","width":null,"totalWeight":0,"uniqueId":"baf80926-1f1f-4c17-948b-547442d47fd3"}], scInvoiceNumber=D8G-3245, scInvoiceTotal=6730, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@5a41e1c2, scOrderWeight=0, scOrderDate=2022-08-06T18:25:01Z, sqCustomerId=NXMMTWH4VMRESB9TE9144V7X2W, sqOrderId=9YX8yBYxhpcXiJGLznECcuU6fPdZY, sqInvoiceId=inv:0-ChAp7Dvzw5vscMo8zDkSWMjWEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChAp7Dvzw5vscMo8zDkSWMjWEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3245 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3245 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3245
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=ef8e4803-1944-4cf8-8166-507d5aa0455d fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=3629ms status=200 bytes=92 protocol=https
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=4edb7904-e222-420a-b959-6623c6e6818d fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=1ms service=4ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChBFg6VSsmmjz1zEKhLd4gjFEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3246 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=carolanneb06@gmail.com, fullName=Carol-Anne atwell, familyName=Carol-Anne atwell, givenName=, nickname=null, phoneNumber=null, addressLine1=615 Van Liew Ct, addressLine2=, addressLine3=null, city=Hillsborough, state=NJ, postalCode=08844, shippingTotal=13, items=[{"totalPriceWithoutTaxes":39.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":39.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the highest Quality Delta 8 THC 200mg Pouches Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":31.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":39.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"200mg-pack-sample","categories":[],"height":null,"unitPrice":39.99,"image":"/static/8d7d96e62dd01b73fcccaad0630079b9/all-5-gummies-pouches.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/5-pack","addedOn":"2022-08-06T18:30:44Z","token":"43b0caa9-4636-44a1-8ae4-2b8bdd273c88","initialData":"","modificationDate":"2022-08-06T18:30:44Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Gummie 5 Pack 1000MG","width":null,"totalWeight":0,"uniqueId":"2da34e3b-699c-4165-a985-dd9b61c2a7e5"}], scInvoiceNumber=D8G-3246, scInvoiceTotal=4850, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@6d17c60e, scOrderWeight=0, scOrderDate=2022-08-06T18:44:01Z, sqCustomerId=J3BZBDJ13MSNB9A9JXQQESYFF0, sqOrderId=h8SFePRkrwKKzBm7IwSizCO9HLXZY, sqInvoiceId=inv:0-ChBFg6VSsmmjz1zEKhLd4gjFEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChBFg6VSsmmjz1zEKhLd4gjFEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3246 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3246 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3246
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=1fd5f9e5-aabe-40e1-b2c0-7cfdd55baf05 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=2863ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 067f1ced-8100-41fc-8145-39c806aea8fd with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u31897 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 102 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 29874 (http)
+Initializing ProtocolHandler ["http-nio-29874"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1546 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-29874"]
+Tomcat started on port(s): 29874 (http) with context path ''
+Started OrderTrackingApplication in 7.355 seconds (JVM running for 8.467)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=4ca15b6f-bfc4-418f-b513-eead0e4c5c57 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=108ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChCMXUckDELGggo6nCd3j49YEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3247 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=COURTENY_N@HOTMAIL.COM, fullName=Courteny Habiger, familyName=Courteny Habiger, givenName=, nickname=null, phoneNumber=null, addressLine1=655 Brittany Blvd, addressLine2=, addressLine3=null, city=Foley, state=MN, postalCode=56329, shippingTotal=13, items=[{"totalPriceWithoutTaxes":39.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":39.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the highest Quality Delta 8 THC 200mg Pouches Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":31.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":39.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-06T00:00:00Z"},"id":"200mg-pack-sample","categories":[],"height":null,"unitPrice":39.99,"image":"/static/8d7d96e62dd01b73fcccaad0630079b9/all-5-gummies-pouches.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/5-pack","addedOn":"2022-08-06T18:58:27Z","token":"c96e4a2f-aeb5-4c0a-9490-5c2ab37d68c2","initialData":"","modificationDate":"2022-08-06T18:58:27Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Gummie 5 Pack 1000MG","width":null,"totalWeight":0,"uniqueId":"86bfe8f2-dc2e-4bc9-b128-3438503a32aa"}], scInvoiceNumber=D8G-3247, scInvoiceTotal=4862, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@566285ae, scOrderWeight=0, scOrderDate=2022-08-06T19:30:18Z, sqCustomerId=DV34V8JPZGXX1BGX3AK6R54J3M, sqOrderId=hAQFfr7XUD7On4QkEt0QpOa3aI9YY, sqInvoiceId=inv:0-ChCMXUckDELGggo6nCd3j49YEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChCMXUckDELGggo6nCd3j49YEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3247 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3247 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3247
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=94d751db-adf0-4c4b-a815-3b4278c070c7 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=2997ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on f85237ef-a492-4aa5-92d4-7e03482ebe2d with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u10268 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 87 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 11637 (http)
+Initializing ProtocolHandler ["http-nio-11637"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1744 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-11637"]
+Tomcat started on port(s): 11637 (http) with context path ''
+Started OrderTrackingApplication in 7.223 seconds (JVM running for 8.393)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=352b5f7f-890f-4fc6-8646-443d34b7cc0b fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=106ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChCdmYTL7l2W0SSOwlwUKs1xEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3248 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=ktmjelde@aol.com, fullName=Kyle Mjelde, familyName=Kyle Mjelde, givenName=, nickname=null, phoneNumber=null, addressLine1=220 Witch Hazel St, addressLine2=, addressLine3=null, city=Summerville, state=SC, postalCode=29486, shippingTotal=13, items=[{"totalPriceWithoutTaxes":99.98,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":99.98,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Gummies Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":99.98,"duplicatable":false,"shippable":true,"minQuantity":null,"price":99.98,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-07T00:00:00Z"},"id":"B2G1","categories":[],"height":null,"unitPrice":99.98,"image":"/static/ceace3dbb473fa1ddd6116f79a08e569/buy2get1free.jpg","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/buy-2-get-1-free","addedOn":"2022-08-07T10:31:40Z","token":"7e650855-8dfd-44bc-a2bc-7f40475bbb41","initialData":"","modificationDate":"2022-08-07T10:32:00Z","alternatePrices":{},"cancellationAction":"None","name":"BUY 2 GET 1 FREE","width":null,"totalWeight":0,"uniqueId":"d48fbbac-07cd-4988-bdf1-3cf69784b263"}], scInvoiceNumber=D8G-3248, scInvoiceTotal=12256, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@1bc3dea8, scOrderWeight=0, scOrderDate=2022-08-07T10:33:04Z, sqCustomerId=WVEA7FJWDRSC35A90CBC6TNDX0, sqOrderId=RY0xaaGsriePnvBo88ECPlnnAxDZY, sqInvoiceId=inv:0-ChCdmYTL7l2W0SSOwlwUKs1xEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChCdmYTL7l2W0SSOwlwUKs1xEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3248 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3248 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3248
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=504002a5-5ff1-428e-a2d2-3c22c03cf3db fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=2945ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 44389c4e-c0ed-4278-9d70-b010ffecb0b7 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u26552 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 95 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 14565 (http)
+Initializing ProtocolHandler ["http-nio-14565"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1761 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-14565"]
+Tomcat started on port(s): 14565 (http) with context path ''
+Started OrderTrackingApplication in 7.257 seconds (JVM running for 8.402)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChCGxIZwOWmQUkATLvgxTKyhEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3249 | Square order created
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=1d146bd4-0641-4344-8e00-4e53741aae26 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=37ms status=200 bytes=92 protocol=https
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=vegasbaby3714@gmail.com, fullName=JACQUE SAUNDERS, familyName=JACQUE SAUNDERS, givenName=, nickname=null, phoneNumber=null, addressLine1=5898 s. il rt. 2, addressLine2=, addressLine3=null, city=Oregon , state=IL, postalCode=61061, shippingTotal=0, items=[{"totalPriceWithoutTaxes":49.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":49.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Apple Dots Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":49.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":49.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-07T00:00:00Z"},"id":"appledots","categories":[],"height":null,"unitPrice":49.99,"image":"/static/a70c93a8dc493b7c068db73de3ec618f/appledots.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/apple-dots","addedOn":"2022-08-07T16:11:42Z","token":"7ce21aad-6862-4f03-923e-bdacfed89a39","initialData":"","modificationDate":"2022-08-07T16:11:42Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Vegan Apple Dots 1000MG","width":null,"totalWeight":0,"uniqueId":"5f91395e-ea4e-4498-86f8-788685098dce"},{"totalPriceWithoutTaxes":99.98,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":99.98,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Gummies Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":99.98,"duplicatable":false,"shippable":true,"minQuantity":null,"price":99.98,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-07T00:00:00Z"},"id":"B2G1","categories":[],"height":null,"unitPrice":99.98,"image":"/static/ceace3dbb473fa1ddd6116f79a08e569/buy2get1free.jpg","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/buy-2-get-1-free","addedOn":"2022-08-07T16:12:29Z","token":"7ce21aad-6862-4f03-923e-bdacfed89a39","initialData":"","modificationDate":"2022-08-07T16:12:29Z","alternatePrices":{},"cancellationAction":"None","name":"BUY 2 GET 1 FREE","width":null,"totalWeight":0,"uniqueId":"fc15842f-5c3c-49aa-bb2b-1799243c6915"}], scInvoiceNumber=D8G-3249, scInvoiceTotal=15935, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@215fe9a8, scOrderWeight=0, scOrderDate=2022-08-07T16:14:12Z, sqCustomerId=ZDGX9T8H34V7S4DT8BWQ77K3DM, sqOrderId=PXwRZhzgYtKp0MBjVRFd6D35lTJZY, sqInvoiceId=inv:0-ChCGxIZwOWmQUkATLvgxTKyhEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChCGxIZwOWmQUkATLvgxTKyhEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3249 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3249 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3249
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=ee252d27-c880-45e3-8782-e7f40e565a48 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=3496ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChDXzfzvNt0ny-3q7b1s43jeEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3250 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=Adamm064@yahoo.com, fullName=Mason  Adams, familyName=Mason  Adams, givenName=, nickname=null, phoneNumber=null, addressLine1=2015 Surrey Glen Dr, addressLine2=, addressLine3=null, city=Orlando, state=FL, postalCode=32828, shippingTotal=13, items=[{"totalPriceWithoutTaxes":49.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":49.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Gummies Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":49.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":49.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-07T00:00:00Z"},"id":"gummie-bears","categories":[],"height":null,"unitPrice":49.99,"image":"/static/f632e9b0f5a1aa9cb12d3290b36bb0ee/gummie-bears.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/gummie-bears","addedOn":"2022-08-07T16:11:06Z","token":"92e8da83-00ca-4eef-9952-d1cbe69d2bae","initialData":"","modificationDate":"2022-08-07T16:11:06Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Gummie Bears 1000MG","width":null,"totalWeight":0,"uniqueId":"abc4d3e8-8759-48d2-9c3f-389076c526a3"}], scInvoiceNumber=D8G-3250, scInvoiceTotal=6762, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@174e49ff, scOrderWeight=0, scOrderDate=2022-08-07T16:14:35Z, sqCustomerId=VRREVQ51FRZPFFJDJ7S9BZ7SEM, sqOrderId=Th0jCpds0iQ0v8WRZkaKEbNXnkVZY, sqInvoiceId=inv:0-ChDXzfzvNt0ny-3q7b1s43jeEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChDXzfzvNt0ny-3q7b1s43jeEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3250 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3250 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3250
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=a63b678e-3830-480c-a29a-79cd982e7d9f fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=2807ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on d2742975-4b2f-44e5-8a82-fb8f20af40b0 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u47495 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 72 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 41160 (http)
+Initializing ProtocolHandler ["http-nio-41160"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1339 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-41160"]
+Tomcat started on port(s): 41160 (http) with context path ''
+Started OrderTrackingApplication in 6.444 seconds (JVM running for 7.597)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=d742f1f6-41cf-4248-b481-05a3d7485d08 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=34ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChBhqxqrlMO2wb82JE3qHhxYEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3251 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=cassie.furr@outlook.com, fullName=Cassie Furr, familyName=Cassie Furr, givenName=, nickname=null, phoneNumber=null, addressLine1=608 E County Road 135, addressLine2=, addressLine3=null, city=Midland, state=TX, postalCode=79706, shippingTotal=13, items=[{"totalPriceWithoutTaxes":49.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":49.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the highest Quality Delta 8 THC Sour Worms Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":39.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":49.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-07T00:00:00Z"},"id":"sour-worms","categories":[],"height":null,"unitPrice":49.99,"image":"/static/e252b0569ea15efb76bd2d97f2dda2a8/sour-worms.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/sour-worms","addedOn":"2022-08-07T22:31:34Z","token":"2e7d8b68-2446-45a9-be42-668873c3119d","initialData":"","modificationDate":"2022-08-07T22:31:34Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Sour Worms 1000MG","width":null,"totalWeight":0,"uniqueId":"d74bf6fa-b5a2-45e5-ba03-cde44d37cd97"}], scInvoiceNumber=D8G-3251, scInvoiceTotal=5724, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@694a083d, scOrderWeight=0, scOrderDate=2022-08-07T22:33:34Z, sqCustomerId=174XVDH898VRFCWVRNVB77XYPG, sqOrderId=ZIOtx7CeIrW5iFKC1E0hl12uNIDZY, sqInvoiceId=inv:0-ChBhqxqrlMO2wb82JE3qHhxYEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChBhqxqrlMO2wb82JE3qHhxYEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3251 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3251 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3251
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=6b32a068-643e-4a99-91ab-698ffc756363 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=3399ms status=200 bytes=92 protocol=https
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=d12d8c80-2b30-4aa1-918e-fb416d8fef3e fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=4ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChB-HQhzlEBwLX3qfVTqT-SHEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3252 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=ryryrains55@gmail.com, fullName=Ryland Rains, familyName=Ryland Rains, givenName=, nickname=null, phoneNumber=null, addressLine1=1326 Canterbury Dr, addressLine2=, addressLine3=null, city=Abilene, state=TX, postalCode=79602, shippingTotal=13, items=[{"totalPriceWithoutTaxes":29.98,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":29.98,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Vegan Orange Slices Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":29.98,"duplicatable":false,"shippable":true,"minQuantity":null,"price":14.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-07T00:00:00Z"},"id":"200mg-orange-sample","categories":[],"height":null,"unitPrice":14.99,"image":"/static/93bc2d69f0469e99ee4e7e3cc2f0e208/200mg-orange.png","stackable":true,"quantity":2,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/orange-slices-200mg","addedOn":"2022-08-07T22:37:47Z","token":"f8e95377-7473-4024-99c5-8a0111e10b14","initialData":"","modificationDate":"2022-08-07T22:37:52Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Orange Slices 200MG","width":null,"totalWeight":0,"uniqueId":"240478f3-7b43-4887-bf8e-4a2e63c30029"}], scInvoiceNumber=D8G-3252, scInvoiceTotal=4706, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@40e944c2, scOrderWeight=0, scOrderDate=2022-08-07T22:38:54Z, sqCustomerId=DPFZ16KNB4YAVEG0RGTXTPS1VC, sqOrderId=B462Yug57Drn96JA9BhEqZxww1CZY, sqInvoiceId=inv:0-ChB-HQhzlEBwLX3qfVTqT-SHEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChB-HQhzlEBwLX3qfVTqT-SHEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3252 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3252 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3252
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=bb398933-8b19-4352-9b06-07e90394d87b fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=2969ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 57e16abd-3f21-4459-bee5-3403dfc43bc8 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u21421 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 50866 (http)
+Initializing ProtocolHandler ["http-nio-50866"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1420 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-50866"]
+Tomcat started on port(s): 50866 (http) with context path ''
+Started OrderTrackingApplication in 6.8 seconds (JVM running for 8.509)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=3d1cf775-1172-4a9f-974a-98431d5c5924 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=32ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChDPBFJa7kAE2R-01zZw8X9oEIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3253 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=jmjaoj@gmail.com, fullName=Alan Cyr, familyName=Alan Cyr, givenName=, nickname=null, phoneNumber=null, addressLine1=781 Crestbrook Loop, addressLine2=, addressLine3=null, city=Longwood, state=FL, postalCode=32750, shippingTotal=13, items=[{"totalPriceWithoutTaxes":99.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":99.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Vegan Gummies Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":79.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":99.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-07T00:00:00Z"},"id":"vegan-pack","categories":[],"height":null,"unitPrice":99.99,"image":"/static/9bcf4b50b3dfe86f67ab20a6fe1ab9c9/vegan2pack.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/vegan-2pack","addedOn":"2022-08-07T23:21:50Z","token":"bd98576c-cdea-4205-a6c4-2b3c82d11801","initialData":"","modificationDate":"2022-08-07T23:21:50Z","alternatePrices":{},"cancellationAction":"None","name":"2 Pack Vegan Gummies","width":null,"totalWeight":0,"uniqueId":"80450f09-1330-4938-ab81-1b9fca0888b6"}], scInvoiceNumber=D8G-3253, scInvoiceTotal=10004, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@227d6223, scOrderWeight=0, scOrderDate=2022-08-07T23:23:09Z, sqCustomerId=A0KCPRPP8MSEX3K565BVQH08TG, sqOrderId=hwwfqNMTiIhc72tJHLwYexTbYIDZY, sqInvoiceId=inv:0-ChDPBFJa7kAE2R-01zZw8X9oEIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChDPBFJa7kAE2R-01zZw8X9oEIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3253 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3253 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3253
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=79a45fdc-af17-4cf2-9fbf-cb75d692af96 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=3168ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on df097639-7e76-45c2-9e7d-f0a160da9802 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u8639 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 63 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 53197 (http)
+Initializing ProtocolHandler ["http-nio-53197"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1299 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-53197"]
+Tomcat started on port(s): 53197 (http) with context path ''
+Started OrderTrackingApplication in 6.081 seconds (JVM running for 6.833)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=44a76be8-7a15-4229-9a81-3ddcffebf61c fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=102ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChDD5Osd_m099MnS_rp9BQm9EIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3254 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=Jimmyday_420@hotmail.com, fullName=James Day, familyName=James Day, givenName=, nickname=null, phoneNumber=null, addressLine1=8712 Bacardi Dr, addressLine2=, addressLine3=null, city=Texas, state=TX, postalCode=75238, shippingTotal=13, items=[{"totalPriceWithoutTaxes":49.99,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":49.99,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Gummies Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":49.99,"duplicatable":false,"shippable":true,"minQuantity":null,"price":49.99,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-08T00:00:00Z"},"id":"gummie-bears","categories":[],"height":null,"unitPrice":49.99,"image":"/static/f632e9b0f5a1aa9cb12d3290b36bb0ee/gummie-bears.png","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/gummie-bears","addedOn":"2022-08-08T06:34:49Z","token":"ab05278c-e290-4edd-8dc1-bb43fc2d65bb","initialData":"","modificationDate":"2022-08-08T06:35:55Z","alternatePrices":{},"cancellationAction":"None","name":"Delta 8 Gummie Bears 1000MG","width":null,"totalWeight":0,"uniqueId":"dd6f4e71-b93e-4879-af41-4921f3c5f0aa"}], scInvoiceNumber=D8G-3254, scInvoiceTotal=6872, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@f639f02, scOrderWeight=0, scOrderDate=2022-08-08T06:50:33Z, sqCustomerId=8ZKMMXVBR4XBZ81TC27MQBRM3C, sqOrderId=d4LM7tKIszALnibBQSv3Kb4mNlZZY, sqInvoiceId=inv:0-ChDD5Osd_m099MnS_rp9BQm9EIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChDD5Osd_m099MnS_rp9BQm9EIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3254 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3254 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3254
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=085d5d2b-aa46-4c90-89d3-1e2a1f3dd065 fwd="10.87.138.18,191.236.193.165" dyno=web.1 connect=0ms service=3177ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 8edc650b-06f4-48d1-bf85-3330584c4210 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u9019 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 54216 (http)
+Initializing ProtocolHandler ["http-nio-54216"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1335 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-54216"]
+Tomcat started on port(s): 54216 (http) with context path ''
+Started OrderTrackingApplication in 6.887 seconds (JVM running for 7.85)
+]: State changed from starting to up
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 1 ms
+onShipped: {"resource_url":"https://ssapi13.shipstation.com/shipments?storeID=54658&batchId=29352787&includeShipmentItems=False","resource_type":"SHIP_NOTIFY"}
+entering processBatch function
+08/08/2022_13:49:54
+Jimmyday_420@hotmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3254 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3254 | gummie-bears | Delta 8 Gummie Bears 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:49:55
+jmjaoj@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3253 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3253 | vegan-pack | 2 Pack Vegan Gummies |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:49:56
+ryryrains55@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3252 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3252 | 200mg-orange-sample | Delta 8 Orange Slices 200MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:49:57
+cassie.furr@outlook.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3251 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3251 | sour-worms | Delta 8 Sour Worms 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:49:58
+Adamm064@yahoo.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3250 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3250 | gummie-bears | Delta 8 Gummie Bears 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:49:59
+COURTENY_N@HOTMAIL.COM
+OrderHistoryPersistenceServiceImpl::write
+D8G-3247 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3247 | 200mg-pack-sample | Delta 8 Gummie 5 Pack 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:00
+dontelopp@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3241 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3241 | 200mg-pack-sample | Delta 8 Gummie 5 Pack 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:01
+vegasbaby3714@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3249 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3249 | appledots | Delta 8 Vegan Apple Dots 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+SalesPersistenceServiceImpl::write
+D8G-3249 | B2G1 | BUY 2 GET 1 FREE |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:03
+rdrunner1965.ka@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3243 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3243 | 200mg-appledots-sample | Delta 8 Apple Dots 200MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:04
+nelaw43@yahoo.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3245 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3245 | peach-rings | Delta 8 Peach Rings 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:05
+carolanneb06@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3246 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3246 | 200mg-pack-sample | Delta 8 Gummie 5 Pack 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:06
+eddyrgang@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3238 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3238 | B2G1 | BUY 2 GET 1 FREE |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:07
+ktmjelde@aol.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3248 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3248 | B2G1 | BUY 2 GET 1 FREE |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:09
+dbeauty_2000@yahoo.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3242 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3242 | bananas | Delta 8 Bananas 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+SalesPersistenceServiceImpl::write
+D8G-3242 | cherry-pieces | Delta 8 Vegan Cherry Pieces 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:10
+cbaumy30@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3244 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3244 | nerd-clusters | Delta 8 Nerd Clusters 1500MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:11
+eddyrgang@gmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3240 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3240 | B2G1 | BUY 2 GET 1 FREE |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+08/08/2022_13:50:12
+jefferson77@comcast.net
+OrderHistoryPersistenceServiceImpl::write
+D8G-3237 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: select orderitems0_.id as id1_3_, orderitems0_.create_date as create_d2_3_, orderitems0_.order_items as order_it3_3_, orderitems0_.order_number as order_nu4_3_ from order_items orderitems0_ where orderitems0_.order_number=?
+SalesPersistenceServiceImpl::write
+D8G-3237 | apple-rings | Delta 8 Sour Apple 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+SalesPersistenceServiceImpl::write
+D8G-3237 | B2G1 | BUY 2 GET 1 FREE |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+SalesPersistenceServiceImpl::write
+D8G-3237 | nerd-clusters | Delta 8 Nerd Clusters 1500MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+SalesPersistenceServiceImpl::write
+D8G-3237 | peach-rings | Delta 8 Peach Rings 1000MG |
+
+Hibernate: insert into sales (date_sold, order_number, product_name, quantity_sold, sku, total_price, unit_price) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select inventory0_.id as id1_0_, inventory0_.last_updated as last_upd2_0_, inventory0_.on_hand as on_hand3_0_, inventory0_.product_name as product_4_0_, inventory0_.sku as sku5_0_ from inventory inventory0_ where inventory0_.sku=?
+Hibernate: update inventory set last_updated=?, on_hand=?, product_name=?, sku=? where id=?
+r]: at=info method=POST path="/shipped" host=delta8ship2.herokuapp.com request_id=e62f5977-e9e9-4ce3-b5e4-e226177faa3a fwd="34.200.1.155" dyno=web.1 connect=0ms service=21676ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+]: Unidling
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on bbf7058a-8453-4ef6-9e0d-6c1afdf4127b with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u59586 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 193 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 42492 (http)
+Initializing ProtocolHandler ["http-nio-42492"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 4829 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-42492"]
+Tomcat started on port(s): 42492 (http) with context path ''
+]: State changed from starting to up
+Started OrderTrackingApplication in 17.919 seconds (JVM running for 21.55)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Completed initialization in 2 ms
+A JSON object was recieved with an eventName of: customauth:customer_updated
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=1b99da7e-e452-44cf-8c0a-90bc1c606edf fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=469ms status=200 bytes=92 protocol=https
+publicURL for setPaymentURL: https://squareup.com/pay-invoice/inv:0-ChApFJNl9uiwmcIFiS0YEmm4EIEK
+OrderHistoryPersistenceServiceImpl::write
+D8G-3255 | Square order created
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Mising phone number. Skipping SMS for order: CustomerOrder(companyName=null, emailAddress=Crski@comcast.net, fullName=Lori Flaherty, familyName=Lori Flaherty, givenName=, nickname=null, phoneNumber=null, addressLine1=1446 Ocean Avenue, addressLine2=#2, addressLine3=null, city=Ocean City, state=NJ, postalCode=08226, shippingTotal=13, items=[{"totalPriceWithoutTaxes":99.98,"hasTaxesIncluded":false,"metadata":null,"originalPrice":null,"maxQuantity":null,"totalPrice":99.98,"customFields":[],"fileGuid":null,"description":"Delta 8 Gummies Sells Only the Most Quality Delta 8 THC Gummies Fully Formulated from Hemp. These products are 2018 Federal Farm Bill Legal.","taxes":[],"hasDimensions":false,"totalPriceWithoutDiscountsAndTaxes":79.98,"duplicatable":false,"shippable":true,"minQuantity":null,"price":99.98,"paymentSchedule":{"trialPeriodInDays":null,"intervalCount":1,"interval":0,"startsOn":"2022-08-08T00:00:00Z"},"id":"B2G1","categories":[],"height":null,"unitPrice":99.98,"image":"/static/ceace3dbb473fa1ddd6116f79a08e569/buy2get1free.jpg","stackable":true,"quantity":1,"taxable":true,"pausingAction":"None","length":null,"weight":null,"url":"https://delta8gummies.com/products/buy-2-get-1-free","addedOn":"2022-08-08T15:28:22Z","token":"9558650f-0b47-4e85-b977-cadd0e012f51","initialData":"","modificationDate":"2022-08-08T15:28:22Z","alternatePrices":{},"cancellationAction":"None","name":"BUY 2 GET 1 FREE","width":null,"totalWeight":0,"uniqueId":"1c1bc218-5bc0-404c-b8ba-ed79a5d26286"}], scInvoiceNumber=D8G-3255, scInvoiceTotal=9967, orderDetail=io.witcradg.ordertrackingapi.entity.OrderDetail@6a90c4b2, scOrderWeight=0, scOrderDate=2022-08-08T15:32:51Z, sqCustomerId=AMW8X0K2CWVQ1AWGGJYBPBZCD8, sqOrderId=dmGYsnqC728M6XRfrRvai5MEhOBZY, sqInvoiceId=inv:0-ChApFJNl9uiwmcIFiS0YEmm4EIEK, sqInvoiceVersion=0, paymentURL=https://squareup.com/pay-invoice/inv:0-ChApFJNl9uiwmcIFiS0YEmm4EIEK)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3255 | SMS sent
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+OrderHistoryPersistenceServiceImpl::write
+D8G-3255 | ShipStation order posted
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+Hibernate: insert into order_detail (base_total, create_date, grand_total, items_total, order_number, saved_amount, shipping_fees, subtotal, taxes_total) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+OrderItemsPersistenceServiceImpl::write
+D8G-3255
+Hibernate: insert into order_items (create_date, order_items, order_number) values (?, ?, ?)
+r]: at=info method=POST path="/ssa" host=delta8ship2.herokuapp.com request_id=32d95bd9-ca69-462f-b84e-67e0c42278a3 fwd="10.87.138.18,191.236.193.61" dyno=web.1 connect=0ms service=5413ms status=200 bytes=92 protocol=https
+onShipped: {"resource_url":"https://ssapi13.shipstation.com/shipments?storeID=54658&batchId=29352787&includeShipmentItems=False","resource_type":"SHIP_NOTIFY"}
+entering processBatch function
+08/08/2022_15:49:39
+Jimmyday_420@hotmail.com
+OrderHistoryPersistenceServiceImpl::write
+D8G-3254 | Label printed
+Hibernate: insert into order_history (create_date, order_number, order_status) values (?, ?, ?)
+AfterShip returned %s
+r]: at=info method=POST path="/shipped" host=delta8ship2.herokuapp.com request_id=96648190-c18e-4f4b-8305-d46b3bc29d73 fwd="34.199.251.255" dyno=web.1 connect=0ms service=1264ms status=200 bytes=92 protocol=https
+]: Idling
+]: State changed from up to down
+]: Stopping all processes with SIGTERM
+Shutting down ExecutorService 'applicationTaskExecutor'
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+]: Process exited with status 143
+ild started by user devin@getcodestaff.io
+ploy eeee0fa1 by user devin@getcodestaff.io
+lease v34 created by user devin@getcodestaff.io
+]: State changed from down to starting
+]: Starting process with command `java -jar target/order-tracking-automation-0.0.1-SNAPSHOT.jar`
+Setting JAVA_TOOL_OPTIONS defaults based on dyno size. Custom settings will override them.
+Picked up JAVA_TOOL_OPTIONS: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+
+.   ____          _            __ _ _
+/\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+'  |____| .__|_| |_|_| |_\__, | / / / /
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.4.5)
+
+Starting OrderTrackingApplication v0.0.1-SNAPSHOT using Java 1.8.0_332-heroku on 1be762c3-7ec7-4142-a3f9-104f124a6ed5 with PID 4 (/app/target/order-tracking-automation-0.0.1-SNAPSHOT.jar started by u5010 in /app)
+Running with Spring Boot v2.4.5, Spring v5.3.6
+No active profile set, falling back to default profiles: default
+ild succeeded
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+Tomcat initialized with port(s): 19222 (http)
+Initializing ProtocolHandler ["http-nio-19222"]
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/9.0.45]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1425 ms
+HHH000204: Processing PersistenceUnitInfo [name: default]
+HHH000412: Hibernate ORM core version 5.4.30.Final
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Initializing ExecutorService 'applicationTaskExecutor'
+Starting ProtocolHandler ["http-nio-19222"]
+Tomcat started on port(s): 19222 (http) with context path ''
+Started OrderTrackingApplication in 7.084 seconds (JVM running for 8.233)
+]: State changed from starting to up
